@@ -20,7 +20,7 @@ conda install poetry
 poetry install
 ```
 
-3. Register your email + password using https://github.com/raminmr/free-api-worldcup2022
+3. Register your email + password using https://github.com/raminmr/free-api-worldcup2022.
 
 This is the command you should run, where YOUR_NAME, YOUR_EMAIL and YOUR_PASSWORD should be udpated.
 ```
@@ -33,6 +33,8 @@ curl --location --request POST 'http://api.cup2022.ir/api/v1/user' \
 "passwordConfirm" : "YOUR_PASSWORD"
 }'
 ```
+
+NOTE: The API with the updated data is maintained by [Reza](https://github.com/raminmr) so if this is useful to you and your team, you can buy him a coffee [here](https://www.buymeacoffee.com/rahiminia).
 
 4. Export those environment variables locally using:
 ```
