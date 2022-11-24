@@ -132,4 +132,5 @@ if response.status_code == 200:
     send_msg_to_slack(results)
 
 else:
-    print("Error - Try again later")
+    print(f"Error {response.status_code}- Try again later")
+    print(response.text)
