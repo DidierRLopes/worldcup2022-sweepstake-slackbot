@@ -29,7 +29,7 @@ def ss(key):
         "France": "Jose",
         "Senegal": "Fabian",
         "Mexico": "James Simmons",
-        "Nederlands": "James",
+        "Netherlands": "James",
         "Tunisia": "Andrew",
         "Henrique": "Croatia",
         "Uruguay": "Cristi",
