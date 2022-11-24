@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "worldcup2022-sweepstake-slackbot"
+version = "0.1.0"
+description = ""
+authors = ["DidierRLopes <dro.lopes@campus.fct.unl.pt>"]
+readme = "README.md"
+packages = [{include = "worldcup2022_sweepstake_slackbot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
