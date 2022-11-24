@@ -29,7 +29,7 @@ def ss(key):
         "France": "Jose",
         "Senegal": "Fabian",
         "Mexico": "James Simmons",
-        "Netherlands": "James",
+        "Nederlands": "James",
         "Tunisia": "Andrew",
         "Henrique": "Croatia",
         "Uruguay": "Cristi",
@@ -103,13 +103,15 @@ if response.status_code == 200:
 
     for result in results:
         if todaydate == result["local_date"].split(" ")[0]:
+            home = ss(result['home_team_en'])
             if result["finished"] == "TRUE":
-                resultstoday.append(f"{ss(result['home_team_en'])} {result['home_score']} - {result['away_score']} {ss(result['away_team_en'])}")
+                resultstoday.append(f"{home}{(27-len(home))* ' '} {result['home_score']} - {result['away_score']} {ss(result['away_team_en'])}")
             else:
-                resultstoday.append(f"{ss(result['home_team_en'])} - {ss(result['away_team_en'])}")
+                resultstoday.append(f"{home}{(27-len(home))* ' '} - {ss(result['away_team_en'])}")
         
         elif tomorrowdate == result["local_date"].split(" ")[0]:
-            gamestomorrow.append(f"{ss(result['home_team_en'])} - {ss(result['away_team_en'])}")
+            home = ss(result['home_team_en'])
+            gamestomorrow.append(f"{home}{(27-len(home))* ' '} - {ss(result['away_team_en'])}")
 
     results = ""
     if resultstoday:
