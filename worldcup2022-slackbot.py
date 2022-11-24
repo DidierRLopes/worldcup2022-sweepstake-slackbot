@@ -1,3 +1,4 @@
+import os
 import ast
 import requests
 from datetime import datetime, timedelta
@@ -9,10 +10,10 @@ from urllib.error import URLError, HTTPError
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-SECRET_EMAIL = "YOUR EMAIL"
-SECRET_PASSWORD = "YOUR PASSWORD"
+SECRET_EMAIL = os.environ.get("SECRET_EMAIL") or "YOUR EMAIL"
+SECRET_PASSWORD = os.environ.get("SECRET_PASSWORD") or "YOUR PASSWORD"
 
-SLACK_WEBHOOK_URL = "YOUR SLACK WEBHOOK URL"
+SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL") or "YOUR SLACK WEBHOOK URL"
 SLACK_CHANNEL_NAME = "#worldcup-2022"
 
 SLACK_USERNAME = "robot"

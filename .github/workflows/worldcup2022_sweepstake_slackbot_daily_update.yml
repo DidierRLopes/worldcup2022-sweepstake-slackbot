@@ -1,0 +1,34 @@
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 21 * * ?' 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner.
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9 #install the python needed
+
+      #- name: install python packages
+      #  run: |
+      #    python -m pip install --upgrade pip
+      #    pip install pandas bs4 requests numpy lxml
+
+      - name: Pass GitHub secrets
+        run: |
+          export SECRET_EMAIL=${{ secrets.SECRET_EMAIL }}
+          export SECRET_PASSWORD=${{ secrets.SECRET_PASSWORD }}
+          export SLACK_WEBHOOK_URL=${{ secrets.SLACK_WEBHOOK_URL }}
+
+      - name: worldcup 2022 sweepstake slack bot daily update
+        run: |
+          python worldcup2022-slackbot.py
