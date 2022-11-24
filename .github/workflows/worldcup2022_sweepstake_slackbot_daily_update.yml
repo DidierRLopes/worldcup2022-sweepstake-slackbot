@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: '0 21 * * *' 
 
+env:
+  SECRET_EMAIL: ${{ secrets.SECRET_EMAIL }}
+  SECRET_PASSWORD: ${{ secrets.SECRET_PASSWORD }}
+  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,12 +27,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests
-
-      - name: Pass GitHub secrets
-        run: |
-          export SECRET_EMAIL=${{ secrets.SECRET_EMAIL }}
-          export SECRET_PASSWORD=${{ secrets.SECRET_PASSWORD }}
-          export SLACK_WEBHOOK_URL=${{ secrets.SLACK_WEBHOOK_URL }}
 
       - name: worldcup 2022 sweepstake slack bot daily update
         run: |
