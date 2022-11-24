@@ -1,4 +1,4 @@
-# Worldcup 2022 Sweepstake Slack bot
+# Worldcup 2022 Sweepstake Slack bot 🤖⚽️ 🇵🇹🇨🇭🏴󠁧󠁢󠁥󠁮󠁧󠁿
 
 The goal of this project is to send a daily update through Slack about Worldcup 2022 fixtures. It adds the names of the team members that have a particular team as per Sweepstake, so it promotes team engagement.
 
@@ -44,6 +44,8 @@ SECRET_PASSWORD="YOUR_PASSWORD"
 
 5. In the code, on the file [/worldcup2022-slackbot.py](/worldcup2022-slackbot.py) modify the `sweepstake` dictionary into the one that makes sense to your team. This is the free one I found and used for our team, and used it live: https://spinnerwheel.com/fifa-world-cup-sweepstake-generator.
 
+<img width="507" alt="Screenshot 2022-11-24 at 01 52 02" src="https://user-images.githubusercontent.com/25267873/203676426-4142f600-ccd0-43e7-924e-da1d27b5eaec.png">
+
 6. Create a slack bot with incoming webhooks
 
 * Go into https://api.slack.com/messaging/webhooks
@@ -66,7 +68,7 @@ export SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...
 poetry run python worldcup2022-slackbot.py
 ```
 
-output image
+<img width="343" alt="Screenshot 2022-11-24 at 01 49 38" src="https://user-images.githubusercontent.com/25267873/203676460-a4d8c6cd-5584-4996-853b-2c4757230291.png">
 
 ## Deploy
 
