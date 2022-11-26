@@ -3,7 +3,7 @@
 The goal of this project is to send a daily update through Slack about Worldcup 2022 fixtures. It adds the names of the team members that have a particular team as per Sweepstake, so it promotes team engagement.
 
 <p align="center">
-<img width="647" alt="Screenshot 2022-11-24 at 01 52 02" src="https://user-images.githubusercontent.com/25267873/204092951-1205d07b-fa44-4ff8-8cc9-a3e4a4868dc6.png">
+<img width="647" alt="Screenshot 2022-11-24 at 01 52 02" src="https://user-images.githubusercontent.com/25267873/204093596-ef16a7c3-9ba5-4300-b580-00087b9baecf.png">
 </p>
 
 ## Getting Started
