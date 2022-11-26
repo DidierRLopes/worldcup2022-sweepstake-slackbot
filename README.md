@@ -68,7 +68,7 @@ export SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...
 poetry run python worldcup2022-slackbot.py
 ```
 
-<img width="343" alt="Screenshot 2022-11-24 at 01 49 38" src="https://user-images.githubusercontent.com/25267873/203676460-a4d8c6cd-5584-4996-853b-2c4757230291.png">
+<img width="647" alt="Screenshot 2022-11-24 at 01 01 15" src="https://user-images.githubusercontent.com/25267873/204091642-9716c970-54f2-4b45-bfa5-6d8912ed9c5b.png">
 
 ## Deploy
 
@@ -81,5 +81,9 @@ That should be it.
 
 If you want to change the daily update time you should go into [/.github/workflows/worldcup2022_sweepstake_slackbot_daily_update.yml](/.github/workflows/worldcup2022_sweepstake_slackbot_daily_update.yml) and update the cron job accordingly.
 
-## Happy tournament and let's go 🇵🇹
+## Possible improvements
 
+* Receive notification as soon as a game is about to happen
+* Receive notification as soon as game has finished
+
+## Happy tournament and let's go 🇵🇹
