@@ -2,7 +2,9 @@
 
 The goal of this project is to send a daily update through Slack about Worldcup 2022 fixtures. It adds the names of the team members that have a particular team as per Sweepstake, so it promotes team engagement.
 
-ADD NICE LOGO
+<p align="center">
+<img width="647" alt="Screenshot 2022-11-24 at 01 52 02" src="https://user-images.githubusercontent.com/25267873/204092951-1205d07b-fa44-4ff8-8cc9-a3e4a4868dc6.png">
+</p>
 
 ## Getting Started
 
@@ -44,7 +46,9 @@ SECRET_PASSWORD="YOUR_PASSWORD"
 
 5. In the code, on the file [/worldcup2022-slackbot.py](/worldcup2022-slackbot.py) modify the `sweepstake` dictionary into the one that makes sense to your team. This is the free one I found and used for our team, and used it live: https://spinnerwheel.com/fifa-world-cup-sweepstake-generator.
 
+<p align="center">
 <img width="507" alt="Screenshot 2022-11-24 at 01 52 02" src="https://user-images.githubusercontent.com/25267873/203676426-4142f600-ccd0-43e7-924e-da1d27b5eaec.png">
+</p>
 
 6. Create a slack bot with incoming webhooks
 
@@ -55,7 +59,9 @@ SECRET_PASSWORD="YOUR_PASSWORD"
 * Select channel you are interested to use bot in, e.g. "#worldcup-2022"
 * Grab the WebHook URL as seen below
 
+<p align="center">
 <img width="647" alt="Screenshot 2022-11-24 at 01 01 15" src="https://user-images.githubusercontent.com/25267873/203671393-bcb76402-af8c-4343-b1a5-f41d22aae6a8.png">
+</p>
 
 7. Create an environment variable for your slack webhook url
 
@@ -68,7 +74,9 @@ export SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...
 poetry run python worldcup2022-slackbot.py
 ```
 
+<p align="center">
 <img width="647" alt="Screenshot 2022-11-24 at 01 01 15" src="https://user-images.githubusercontent.com/25267873/204091642-9716c970-54f2-4b45-bfa5-6d8912ed9c5b.png">
+</p>
 
 ## Deploy
 
