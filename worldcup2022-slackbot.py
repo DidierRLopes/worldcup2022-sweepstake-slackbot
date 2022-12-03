@@ -93,10 +93,10 @@ if response.status_code == 200:
     results = ast.literal_eval(response.text)["data"]
 
     today = datetime.now()
-    todaydate = today.strftime("%m/%d/%Y")
+    todaydate = today.strftime("%m/%-d/%Y")
 
     tomorrow = today + timedelta(days=1)
-    tomorrowdate = tomorrow.strftime("%m/%d/%Y")
+    tomorrowdate = tomorrow.strftime("%m/%-d/%Y")
 
     resultstoday = list()
     gamestomorrow = list()
